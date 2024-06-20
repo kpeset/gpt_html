@@ -1,8 +1,15 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+/* Reset default browser styles and set box-sizing */
+* {
+  box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  font-family: Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+/* Navbar styling */
 header {
   background-color: #a306b6;
   padding: 10px 20px;
@@ -33,28 +40,29 @@ nav ul li a {
   font-weight: bold;
 }
 
+/* Hero section styling */
 .hero {
-  background-image: url("https://via.placeholder.com/1200x400"); /* Replace with your image URL */
+  background-image: url("https://picsum.photos/1200/400"); /* Replace with your image URL */
   background-size: cover;
   background-position: center;
-  height: 400px;
+  min-height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  color: white;
 }
 
 .hero-text h1 {
-  color: white;
   font-size: 48px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-main {
-  padding: 20px;
-}
-
+/* About section styling */
 .about {
-  margin-bottom: 40px;
+  max-width: 65ch;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
 .about h2 {
@@ -64,11 +72,13 @@ main {
 
 .about p {
   font-size: 16px;
-  line-height: 1.5;
 }
 
+/* Featured posts section styling */
 .featured-posts {
-  margin-bottom: 40px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
 .featured-posts h2 {
@@ -88,16 +98,17 @@ main {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+}
+
+.post h3 {
   font-size: 18px;
   font-weight: bold;
 }
 
+/* Footer styling */
 footer {
   background-color: #a306b6;
   color: white;
   text-align: center;
   padding: 10px 0;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
